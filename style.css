@@ -116,6 +116,12 @@ SECTION TITLES
   letter-spacing: 3px;
 }
 
+@media (max-width: 768px) {
+  .hero-image img {
+    transform: translateX(-15%);
+  }
+}
+
 /* BIO */
 .bio {
   width: 100%;
