@@ -1081,3 +1081,162 @@ PATREON LINK
   letter-spacing:1px;
 
 }
+
+/*==================================================
+RESPONSIVE - HEADER
+==================================================*/
+
+@media (max-width:768px){
+
+  .header{
+  
+      flex-direction:column;
+  
+      align-items:center;
+  
+      justify-content:center;
+  
+      padding:14px 18px;
+  
+  }
+  
+  .logo{
+  
+      font-size:1rem;
+  
+      letter-spacing:2px;
+  
+      margin-bottom:14px;
+  
+  }
+  
+  .nav{
+  
+      display:grid;
+  
+      grid-template-columns:repeat(3, auto);
+  
+      justify-content:center;
+  
+      gap:10px 20px;
+  
+  }
+  
+  .nav a{
+  
+      font-size:13px;
+  
+      letter-spacing:.5px;
+  
+      text-align:center;
+  
+  }
+  
+  }
+
+  @media (max-width: 768px) {
+
+    /* HEADER EN MÓVIL */
+    .site-header {
+      padding: 15px 20px;
+    }
+  
+    /* LOGO ARRIBA */
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+  
+    /* MENÚS COMO GRID */
+    .nav-top ul,
+    .nav-bottom ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px 15px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+  
+    /* LINKS PERFECTAMENTE ALINEADOS */
+    nav ul li {
+      text-align: center;
+    }
+  
+    nav ul li a {
+      display: block;
+      font-size: 14px;
+      text-decoration: none;
+      color: #111;
+      padding: 6px 0;
+    }
+  
+    /* separación entre bloques */
+    .nav-bottom {
+      margin-top: 10px;
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    /* OCULTAR TODO EL SUBTÍTULO DEL HERO (más robusto) */
+    .hero-text p {
+      display: none !important;
+    }
+  
+  }
+  
+  @media (max-width: 768px) {
+
+    /* HERO MÓVIL LIMPIO */
+    .hero {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 25px 15px;
+    }
+  
+    /* CONTENEDOR DE IMAGEN SIN DESPLAZAMIENTO */
+    .hero-image {
+      width: 100%;
+      display: flex;
+      justify-content: center; /* clave: centrado limpio */
+    }
+  
+    /* IMAGEN SIN MÁRGENES EXTRA */
+    .hero-image img {
+      width: 100%;
+      max-width: 420px;
+      height: auto;
+      object-fit: cover;
+  
+      transform: none; /* eliminamos el problema */
+    }
+  
+  }
+  
+  @media (max-width: 768px) {
+
+    /* CUALQUIER CONTENEDOR POSIBLE DE GALLERY */
+    .gallery,
+    .gallery-grid,
+    .gallery-container,
+    section .gallery {
+      display: block !important;
+      grid-template-columns: none !important;
+    }
+  
+    /* IMÁGENES */
+    .gallery img,
+    .gallery-grid img,
+    .gallery-container img {
+      width: 100% !important;
+      height: auto !important;
+      display: block;
+      object-fit: cover;
+      margin-bottom: 12px;
+    }
+  
+  }
+  
